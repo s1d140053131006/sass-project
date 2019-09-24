@@ -3,6 +3,57 @@
 /* === Sizes Section === */
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+.col-1 {
+  width: 2em; }
+
+.col-2 {
+  width: 4em; }
+
+.col-3 {
+  width: 6em; }
+
+.col-4 {
+  width: 8em; }
+
+.col-5 {
+  width: 10em; }
+
+.col-6 {
+  width: 12em; }
+
+.bob-banker-profile {
+  background-image: url("/img/bob-banker.png"); }
+
+.patty-plume-profile {
+  background-image: url("/img/patty-plume.png"); }
+
+.sandra-smith-profile {
+  background-image: url("/img/sandra-smith.png"); }
+
+.tiny {
+  font-size: 8px; }
+
+.small {
+  font-size: 11px; }
+
+.medium {
+  font-size: 13px; }
+
+.large {
+  font-size: 18px; }
+
+.picture-2 {
+  width: 20%; }
+
+.picture-4 {
+  width: 40%; }
+
+.picture-6 {
+  width: 60%; }
+
+.picture-8 {
+  width: 80%; }
+
 a {
   font-style: italic;
   text-decoration: none; }
@@ -10,9 +61,18 @@ a {
 * html body {
   font-size: 125%; }
 
+.error, .critical-error, .cta-button, .super-cta-button {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
-  color: #222222; }
+  font-size: 1.125em;
+  color: #fff;
+  background-color: #22222a; }
   @media only screen and (max-width: 960px) {
     body {
       font-size: 125%; } }
@@ -28,25 +88,67 @@ p {
   font-family: "Alegreya Sans", Arial, sans-serif; }
 
 a {
-  color: #f27731; }
+  color: #c24721; }
+  a:hover {
+    color: #812f16; }
+
+.sub-title {
+  font-style: italic; }
+
+.sub-title {
+  font-size: 1.25em; }
 
 .warning-button {
-  background-color: orange;
+  background-color: #00368b;
   color: #fff;
-  padding: 8px 12px; }
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  width: auto;
+  height: 45px;
+  font-size: 0.875em; }
+  .warning-button:hover {
+    background-color: #004abe; }
+
+.cta-button, .super-cta-button {
+  background-color: #00368b;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  width: auto;
+  height: 45px;
+  font-size: 0.875em;
+  border-radius: 6px;
+  font-weight: bold; }
+  .cta-button:hover, .super-cta-button:hover {
+    background-color: #004abe; }
+
+.super-cta-button {
+  font-size: 1.25em; }
 
 #header {
   border-radius: 12px;
-  border: 1px solid #000;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  border: 1px solid #fff;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background-color: #170a48; }
+  background-color: #42424a; }
   #header #main-menu li {
     display: inline; }
   #header #main-menu a {
-    color: white; }
+    color: white;
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(254, 254, 254, 0);
+    transition: border-bottom 0.5s;
+    transition-timing-function: ease-in-out; }
+    #header #main-menu a:hover {
+      border-bottom: 1px solid #fefefe; }
 
 #main {
   width: 960px;
@@ -56,9 +158,24 @@ a {
     #main {
       width: auto;
       max-width: 960px; } }
+  #main #content {
+    float: left;
+    width: 69.75%; }
+  #main #sidebar {
+    float: right;
+    width: 23.25%; }
+    #main #sidebar li {
+      list-style-type: none;
+      padding: 1em 1.25em;
+      border-bottom: 1px dashed #999;
+      color: #fff; }
+      #main #sidebar li:hover {
+        background-color: #444454; }
 
 #footer {
+  clear: both;
   height: 90px;
-  background-color: #ccf962; }
+  background-color: #698932;
+  border-top: 5px solid #3e511e; }
 
 /*# sourceMappingURL=main.css.map */
